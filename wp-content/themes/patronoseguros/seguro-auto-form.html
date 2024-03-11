@@ -1,0 +1,225 @@
+<div class="form-box">
+  <h3 class="form-box__title">Seguro</h3>
+  <div class="form-box__item form-box__item--two-options">
+    Você já possui seguro? [radio seguro use_label_element default:1 "Sim"
+    "Não"]
+  </div>
+</div>
+
+<div class="form-box">
+  <h3 class="form-box__title">Informações do Veículo</h3>
+  <div class="form-box__item">
+    <label>
+      Qual a marca do veículo? [select* marca "Acura" "Agrale" "Alfa Romeo" "Am
+      Gen" "Asia Motors" "Aston Martin" "Audi" "Baby" "Bmw" "Brm" "Bugre" "Byd"
+      "Cab Motors" "Cadillac" "Caoa Chery" "Cbt Jipe" "Chana" "Changan" "Chery"
+      "Chevrolet Gm" "Chrysler" "Citroen" "Cross Lander" "Daewoo" "Daihatsu"
+      "Dodge" "Effa" "Engesa" "Envemo" "Fercar Buggy" "Ferrari" "Fiat"
+      "Fibravan" "Ford" "Foton" "Fyber" "Geely" "Gmc" "Great Wall" "Gurgel"
+      "Hafei" "Hitech Electric" "Honda" "Hyundai" "Isuzu" "Iveco" "Iveco-Fiat"
+      "Jac" "Jac Motors" "Jaguar" "Jeep" "Jinbei" "Jpx" "Kia Motors" "Lada"
+      "Lamborghini" "Land Rover" "Lexus" "Lifan" "Lobini" "Lotus" "Mahindra"
+      "Maserati" "Matra" "Mazda" "Mclaren" "Mercedes Benz" "Mercedes-Benz"
+      "Mercury" "Mg" "Mini" "Mini Cooper" "Mitsubishi" "Miura" "Nissan"
+      "Peugeot" "Plymouth" "Pontiac" "Porsche" "Ram" "Rely" "Renault" "Rolls
+      Royce" "Rolls-Royce" "Saab" "Saturn" "Seat" "Semi Reb" "Semi Reb."
+      "Shineray" "Smart" "Ssangyong" "Subaru" "Suzuki" "Tac" "Toyota" "Troller"
+      "Volkswagen" "Volvo" "Wake" "Walk" "Wuling Motors"]
+    </label>
+  </div>
+
+  <div class="form-box__row">
+    <div class="form-box__item">
+      <label>
+        Qual o ano de fabricação? [number* ano-fabricacao max:2024]
+      </label>
+    </div>
+    <div class="form-box__item">
+      <label> Qual o ano do modelo? [number* ano-modelo max:2024] </label>
+    </div>
+  </div>
+
+  <div class="form-box__item">
+    <label> Qual o modelo? [text* modelo] </label>
+  </div>
+
+  <div class="form-box__row form-box__row--three-items">
+    <div class="form-box__item form-box__item--two-options">
+      O veículo é Zero KM? [radio zero use_label_element default:1 "Sim" "Não"]
+    </div>
+    <div class="form-box__item form-box__item--two-options">
+      Você já possui o veículo? [radio possui-veiculo use_label_element
+      default:1 "Sim" "Não"]
+    </div>
+    <div class="form-box__item">
+      <label> Qual a placa do veículo? (opcional) [text placa] </label>
+    </div>
+  </div>
+
+  <div class="form-box__row">
+    <div class="form-box__item">
+      O veículo está equipado com: [checkbox equipamentos use_label_element
+      "Alarme sonoro" "Bloqueador de ignição" "Dispositivo rastreador"]
+    </div>
+    <div class="form-box__item">
+      Informações adicionais sobre o veículo: [checkbox informacoes-adicionais
+      use_label_element "Possui isenção tributária" "Veículo blindado" "Possui
+      Kit Gás" "Possui chassi remarcado"]
+    </div>
+  </div>
+</div>
+
+<div class="form-box">
+  <h3 class="form-box__title">Uso do Veículo</h3>
+  <div class="form-box__row">
+    <div class="form-box__item">
+      <label>
+        CEP onde o veículo passa a noite [number* cep autocomplete:cep]
+      </label>
+    </div>
+    <div class="form-box__item">
+      <label> Logadouro [text* logadouro autocomplete:rua] </label>
+    </div>
+    <div class="form-box__item">
+      <label> Bairro [text* bairro autocomplete:bairro] </label>
+    </div>
+    <div class="form-box__item">
+      <label> Cidade [text* cidade autocomplete:cidade] </label>
+    </div>
+  </div>
+
+  <div class="form-box__item">
+    Local de estacionamento residencia [radio estacionamento-residencia
+    use_label_element default:1 "Rua" "Garagem" "Estacionamento"]
+  </div>
+
+  <div class="form-box__item">
+    Local de estacionamento faculdade [radio estacionamento-faculdade
+    use_label_element default:1 "Rua" "Garagem" "Estacionamento" "Não
+    utilizado"]
+  </div>
+
+  <div class="form-box__item">
+    Local de estacionamento trabalho [radio estacionamento-trabalho
+    use_label_element default:1 "Rua" "Garagem" "Estacionamento" "Não
+    utilizado"]
+  </div>
+
+  <div class="form-box__item">
+    Tipo de uso do veículo [checkbox uso-veiculo use_label_element "Ida e volta
+    do trabalho" "Ida e volta da escola / faculdade" "Atividade comercial"
+    "Lazer"]
+  </div>
+</div>
+
+<div class="form-box">
+  <h3 class="form-box__title">Condutores</h3>
+  <p class="form-box__description">
+    Condutor principal é quem usa o veículo ao menos 5 dias da semana. Se o
+    veículo for dividido entre diversos condutores, o principal será o condutor
+    mais jovem que usa o veículo ao menos 2 dias da semana.
+  </p>
+
+  <div class="form-box__item form-box__item--two-options">
+    Você vai dirigir o veículo a maior parte do tempo? [radio voce-condutor
+    use_label_element default:1 "Sim" "Não"]
+  </div>
+
+  <div class="form-box__item form-box__item--two-options">
+    Você vai contratar o seguro em seu nome? [radio voce-contratante
+    use_label_element default:1 "Sim" "Não"]
+  </div>
+
+  <div class="form-box__item form-box__item--two-options">
+    Você é o proprietário do veículo? [radio voce-proprietario use_label_element
+    default:1 "Sim" "Não"]
+  </div>
+</div>
+
+<div class="form-box">
+  <h3 class="form-box__title">Contratante</h3>
+  <div class="form-box__item">
+    <label> Nome completo [text* nome autocomplete:name] </label>
+  </div>
+
+  <div class="form-box__row form-box__row--three-items">
+    <div class="form-box__item">
+      <label> CPF [number* cpf autocomplete:cpf] </label>
+    </div>
+
+    <div class="form-box__item">
+      <label>
+        Data de nascimento [date* nascimento autocomplete:nascimento]
+      </label>
+    </div>
+
+    <div class="form-box__item">
+      <label> Renda mensal [number* renda] </label>
+    </div>
+  </div>
+
+  <div class="form-box__row">
+    <div class="form-box__item">
+      <label>
+        Escolaridade [select* escolaridade "Ensino médio incompleto" "Ensino
+        médio completo" "Curso Superior Incompleto" "Curso Superior Completo"]
+      </label>
+    </div>
+
+    <div class="form-box__item">
+      <label>
+        Com quantos anos o condutor principal tirou a primeira habilitação?
+        [number* primeira-habilitacao]
+      </label>
+    </div>
+  </div>
+
+  <div class="form-box__row">
+    <div class="form-box__item">
+      <label>
+        Veículos na residência (incluindo o veículo da cotação) [number*
+        veiculos]
+      </label>
+    </div>
+
+    <div class="form-box__item">
+      <label>
+        Uso do veículo (incluindo o veículo da cotação) [select* uso-diario "Até
+        1 dia por semana" "Até 2 dias por semana" "Até 3 dias por semana" "Até 4
+        dias por semana" "Até 5 dias por semana" "Até 6 dias por semana" "Todos
+        os dias da semana"]
+      </label>
+    </div>
+  </div>
+
+  <div class="form-box__item form-box__item--two-options">
+    Algum menor de 25 anos utiliza o veículo? [radio menor use_label_element
+    default:1 "Sim" "Não"]
+  </div>
+</div>
+
+<div class="form-box">
+  <h3 class="form-box__title">Informações para contato</h3>
+
+  <div class="form-box__item">
+    <label> Nome completo [text* nome-contato autocomplete:name] </label>
+  </div>
+
+  <div class="form-box__row">
+    <div class="form-box__item">
+      <label> Nome completo [email* email-contato autocomplete:email] </label>
+    </div>
+    <div class="form-box__item">
+      <label>
+        Telefone (fixo ou celular) [tel* tel-contato autocomplete:phone]
+      </label>
+    </div>
+  </div>
+</div>
+
+<div class="forms__buttons">
+  <button type="reset" class="forms__buttons__clear">Limpar</button>[submit
+  class:forms__buttons__send "Enviar"]
+</div>
+
+
